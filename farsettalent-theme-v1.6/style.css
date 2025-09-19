@@ -1,0 +1,51 @@
+/*
+Theme Name: Farset Talent
+Theme URI: https://farsettalent.com
+Author: Farset Talent
+Description: Polished, fully responsive block theme with improved hero, buttons, cards, and footer. Includes Home, Page, Jobs archive/single templates.
+Version: 1.6
+Requires at least: 6.1
+Tested up to: 6.6
+Requires PHP: 7.4
+Text Domain: farsettalent
+*/
+
+:root{
+  --ft-navy:#0a1a2b;
+  --ft-mustard:#d4a017;
+  --ft-ink:#1f2937;
+  --ft-bg:#ffffff;
+  --ft-muted:#f5f7fb;
+}
+/* Base layout */
+.wp-site-blocks{max-width:1200px;margin-inline:auto}
+h1,h2,h3{font-weight:800;line-height:1.2}
+p{line-height:1.7;color:var(--ft-ink)}
+/* Hero band */
+.ft-hero{background:var(--ft-navy);color:#fff;border-radius:16px;padding:48px 24px;margin:24px 0}
+.ft-hero h1{font-size:clamp(28px,4vw,44px);margin:0 0 10px}
+.ft-hero p{color:#e5e8ef;margin:0 0 18px}
+/* Buttons */
+.wp-block-buttons{gap:12px}
+.wp-block-button__link{background:var(--ft-mustard);color:#fff !important;border-radius:10px;padding:14px 20px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.wp-block-button.is-style-outline .wp-block-button__link{background:transparent;border:2px solid var(--ft-mustard);color:var(--ft-mustard)!important}
+.wp-block-button__link:hover{background:#845f00;color:#fff !important}
+/* Cards */
+.card{background:#fff;border:1px solid rgba(10,26,43,.08);border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,.06);padding:18px}
+.card h3{margin:0 0 6px}
+/* Footer */
+.ft-footer{background:var(--ft-navy);color:#fff;border-radius:16px;padding:28px;margin:32px 0 24px}
+.ft-footer a{color:#fff;text-decoration:none}
+.ft-footer a:hover{text-decoration:underline}
+.ft-footer .ft-footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px}
+.ft-social{display:flex;gap:12px}
+/* Responsive */
+@media (max-width: 992px){
+  .wp-site-blocks{padding-inline:16px}
+  .ft-footer .ft-footer-grid{grid-template-columns:1fr}
+}
+@media (max-width: 640px){
+  .wp-block-buttons{flex-wrap:wrap}
+  .wp-block-buttons .wp-block-button{flex:1 1 calc(50% - 12px)}
+  .card{margin-bottom:12px}
+}

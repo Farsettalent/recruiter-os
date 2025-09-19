@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "settings": {
+    "layout": {
+      "contentSize": "1100px",
+      "wideSize": "1400px"
+    },
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#0a1a2b",
+          "name": "Farset Navy"
+        },
+        {
+          "slug": "accent",
+          "color": "#d4a017",
+          "name": "Mustard"
+        },
+        {
+          "slug": "background",
+          "color": "#ffffff",
+          "name": "Background"
+        },
+        {
+          "slug": "ink",
+          "color": "#1f2937",
+          "name": "Ink"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif",
+          "name": "Inter/System",
+          "slug": "inter-system"
+        }
+      ]
+    }
+  }
+}
